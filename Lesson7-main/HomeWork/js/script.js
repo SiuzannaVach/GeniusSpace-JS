@@ -22,15 +22,15 @@ console.log(credit.result());*/
 
 //object & classes & interface
 
-class Bank {
+/*class Bank {
   static type = "Privat";
   constructor(options) {
     this.summ = options.summ;
     this.month = options.month;
     this.p = options.p;
   }
-  /*credit() {
-      return console.log(this.summ + this.p * this.month);*/
+  credit() {
+      return console.log(this.summ + this.p * this.month);
   credit() {
     return console.log("I am Privat");
   }
