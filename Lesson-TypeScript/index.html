@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MOTIVATE ME</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="widget">
+      <div id="currency_status" class="disconnected">🔴 Disconnected</div>
+      <p>
+        BTC/USDT: <span id="price">-</span>
+        <span id="trend" class="disconnected">-</span>
+      </p>
+      <button onclick="connect()">Reconnect</button>
+    </div>
+
+    <section id="main">
+      <div class="content-generator">
+        <h1>MOTIVATE ME</h1>
+        <button id="generate">Generate Post</button>
+        <textarea
+          id="post"
+          rows="6"
+          placeholder="Your generated post will appear here..."
+        ></textarea>
+        <button id="save">Save to Google Sheets</button>
+        <p id="status"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>All-in-one place to learn code.</p>
+    </footer>
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>
